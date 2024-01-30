@@ -13,6 +13,7 @@ export default {
       navbar2:"#FF7B00",
       teal: "#26c4c5",
       fondheader: "#060e4d",
+      botun: "#FFFFFF",
 
     },
     fontFamily: {
@@ -21,8 +22,9 @@ export default {
     },
     textColor: {
       texto:"black",
-      texto2:"#09090b",
-      texto3:"#2B2D37",
+      texto2:"black",
+      texto3:"#FF7B00",
+      texto4:"white",
     },
     plugins: [require('daisyui')],
     

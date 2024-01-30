@@ -7,7 +7,7 @@ function FooterComponent() {
         <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:items-stretch">
           <div className="flex flex-col items-stretch w-[29%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col items-stretch max-md:mt-10">
-              <h2 className="text-2xl font-semibold text-texto whitespace-nowrap">Constructor</h2>
+              <h2 className="text-2xl font-semibold font-Black text-texto whitespace-nowrap">OBRASJAC</h2>
               <p className="mt-10 text-base text-neutral-400 max-md:mt-10">About company <br /> Details Description</p>
               <div className="flex gap-5 justify-between items-stretch pr-2.5 mt-12 max-md:mt-10">
                 <span className="flex flex-col shrink-0 w-6 h-6 rounded-full" />

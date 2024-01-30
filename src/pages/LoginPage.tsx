@@ -1,10 +1,10 @@
-import NavComponent from "../Components/Navbar/navbar";
+import NavComponent2 from "../Components/Navbar/navbar2";
 import FooterComponent from "../Components/Footer/Footer";
 import LoginComponent from "../Components/Login/Login";
 function LoginPage() {
     return (
         <>
-            <NavComponent />
+            <NavComponent2 />
             <LoginComponent />
             <FooterComponent />
         </>

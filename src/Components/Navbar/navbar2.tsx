@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const NavComponent: React.FC = () => {
+const NavComponent2: React.FC = () => {
   return (
     <>
       <div className="flex flex-col items-center px-16 pt-2 pb-2 w-full bg-navbar max-md:px-5 max-md:max-w-full">
@@ -36,14 +36,7 @@ const NavComponent: React.FC = () => {
         </div>
       </div>
 
-      <form className="flex overflow-hidden relative flex-col items-center px-16 pb-12 w-full min-h-[740px] max-md:px-5 max-md:max-w-full">
-        <img
-          loading="lazy"
-          srcSet="https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F3b84d7ffab3d45598581d37c0d1dee2b?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F3b84d7ffab3d45598581d37c0d1dee2b?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F3b84d7ffab3d45598581d37c0d1dee2b?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F3b84d7ffab3d45598581d37c0d1dee2b?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F3b84d7ffab3d45598581d37c0d1dee2b?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F3b84d7ffab3d45598581d37c0d1dee2b?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F3b84d7ffab3d45598581d37c0d1dee2b?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F3b84d7ffab3d45598581d37c0d1dee2b"
-          className="object-cover object-center absolute inset-0 size-full"
-          aria-hidden="true"
-        />
-
+      <form className="flex overflow-hidden relative flex-col items-center px-16 w-full min-h-[740px] max-md:px-5 max-md:max-w-full">
         <div className="flex relative z-10 flex-col items-stretch -mt-7 mb-52 w-full max-w-[1110px] max-md:mb-10 max-md:max-w-full">
           <div className="flex gap-5 justify-between items-stretch px-3 py-3 w-full bg-navbar2 rounded-none max-md:flex-wrap max-md:px-5 max-md:max-w-full">
             <header className="flex gap-2.5 justify-between items-stretch">
@@ -73,23 +66,17 @@ const NavComponent: React.FC = () => {
                   >
                     <li>
                       <button className="font-semibold">
-                        <Link to={"/Construccion"} >
-                          Construcción
-                        </Link>
+                        <Link to={"/Construccion"}>Construcción</Link>
                       </button>
                     </li>
                     <li>
-                    <button className="font-semibold">
-                        <Link to={"/Reformas"} >
-                          Reformas
-                        </Link>
+                      <button className="font-semibold">
+                        <Link to={"/Reformas"}>Reformas</Link>
                       </button>
                     </li>
                     <li>
-                    <button className="font-semibold">
-                        <Link to={"/Demolicion"} >
-                          Demolición
-                        </Link>
+                      <button className="font-semibold">
+                        <Link to={"/Demolicion"}>Demolición</Link>
                       </button>
                     </li>
                   </ul>
@@ -117,22 +104,10 @@ const NavComponent: React.FC = () => {
               </div>
             </nav>
           </div>
-          <div className="mt-32 mr-auto text-5xl font-bold text-right text-texto uppercase shadow-sm leading-[55px] max-md:max-w-full max-md:text-4xl max-md:leading-10">
-            <p>
-              <span className="text-2xl">
-                {" "}
-                &quot;Transformamos tus espacios, construimos tus sueños:
-                ¡Construcción, Reformas y Pintura con Pasión!&quot;{" "}
-              </span>
-            </p>
-          </div>
-          <button className="justify-center items-stretch self-end px-10 py-4 mt-40 text-2xl font-semibold text-texto whitespace-nowrap bg-navbar2 rounded-lg max-md:px-5 max-md:mt-10">
-            Contactanos
-          </button>
         </div>
       </form>
     </>
   );
 };
 
-export default NavComponent;
+export default NavComponent2;

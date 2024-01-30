@@ -1,10 +1,10 @@
-import NavComponent from "../Components/Navbar/navbar"
+import NavComponent2 from "../Components/Navbar/navbar2"
 import FooterComponent from "../Components/Footer/Footer"
 import ProfileComponent from "../Components/Profile/Profile"
 const ProfilePage = () => {
   return (
     <>
-    <NavComponent/>
+    <NavComponent2/>
     <ProfileComponent/>
     <FooterComponent/>
     </>
