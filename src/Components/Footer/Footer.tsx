@@ -1,6 +1,85 @@
 function FooterComponent() {
   return (
-    <div className="relative bg-navbar font-sans">
+
+    <>
+    <div className="flex flex-col justify-center items-center px-16 py-12 w-full bg-navbar max-md:px-5 max-md:max-w-full">
+      <header className="mt-5 mb-3.5 w-full max-w-[1056px] max-md:max-w-full">
+        <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:items-stretch">
+          <div className="flex flex-col items-stretch w-[29%] max-md:ml-0 max-md:w-full">
+            <div className="flex flex-col items-stretch max-md:mt-10">
+              <h2 className="text-2xl font-semibold text-texto whitespace-nowrap">Constructor</h2>
+              <p className="mt-10 text-base text-neutral-400 max-md:mt-10">About company <br /> Details Description</p>
+              <div className="flex gap-5 justify-between items-stretch pr-2.5 mt-12 max-md:mt-10">
+                <span className="flex flex-col shrink-0 w-6 h-6 rounded-full" />
+                <span className="flex flex-col shrink-0 w-6 h-6 rounded-full" />
+                <span className="flex flex-col shrink-0 w-6 h-6 rounded-full" />
+                <span className="flex flex-col shrink-0 w-6 h-6 rounded-full" />
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col items-stretch ml-5 w-[71%] max-md:ml-0 max-md:w-full">
+            <div className="grow max-md:mt-10 max-md:max-w-full">
+              <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:items-stretch">
+                <div className="flex flex-col items-stretch w-[55%] max-md:ml-0 max-md:w-full">
+                  <div className="flex flex-col grow items-stretch whitespace-nowrap max-md:mt-10">
+                    <h2 className="self-center text-xl font-bold text-white">Quick Links</h2>
+                    <div className="flex gap-5 justify-between items-stretch mt-12 text-base font-semibold text-neutral-400 max-md:mt-10">
+                      <div className="flex flex-col items-stretch">
+                        <a href="#" className="">App Store</a>
+                        <div className="mt-8">Play Store</div>
+                        <div className="mt-8">Latest News</div>
+                        <div className="mt-9">Our Blog</div>
+                      </div>
+                      <div className="flex flex-col items-stretch self-start">
+                        <div className="">Our Services</div>
+                        <div className="mt-9">About Us</div>
+                        <div className="mt-9">Our Projects</div>
+                        <div className="mt-8">Features</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col items-stretch ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                  <div className="flex flex-col items-stretch text-base font-semibold whitespace-nowrap text-neutral-400 max-md:mt-10">
+                    <h2 className="text-xl font-bold text-white">Support</h2>
+                    <div className="mt-11 max-md:mt-10">Who We Are</div>
+                    <div className="mt-9">Shop</div>
+                    <div className="mt-8">FAQ</div>
+                  </div>
+                </div>
+                <div className="flex flex-col items-stretch ml-5 w-1/5 max-md:ml-0 max-md:w-full">
+                  <div className="flex flex-col items-stretch text-base font-semibold whitespace-nowrap text-neutral-400 max-md:mt-10">
+                    <h2 className="text-xl font-bold text-white">Contact Us</h2>
+                    <div className="mt-12 max-md:mt-10">Address</div>
+                    <div className="mt-9">Phone</div>
+                    <div className="mt-9">Email</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+   
+    <header className="header">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c601c123a688188681f8fda2ec6cd526bbe581eaec475cbb831fe1f5adac6df1?apiKey=7add5af4d9d449a6a28e95a6f9ef46a6&"
+        className="object-contain object-center shrink-0 w-4 aspect-square"
+        alt="Logo"
+      />
+      <div className="flex-auto text-xs text-black">
+        C.Name 2024
+      </div>
+    </header>
+
+
+
+
+
+
+    {/* <div className="relative bg-navbar font-sans">
       
       <div className="w-[422px] h-6 left-[509px] top-[208px] font-sans absolute text-center text-neutral-400 text-xs font-normal leading-none tracking-tight">
         Design with love © TanahAirStudio 2020. All right reserved
@@ -115,7 +194,9 @@ function FooterComponent() {
           Join Us
         </div>
       </div>
-    </div>
+    </div> */}
+
+    </>
   );
 }
 
