@@ -36,8 +36,7 @@ const NavComponent2: React.FC = () => {
         </div>
       </div>
 
-      <form className="flex overflow-hidden relative flex-col items-center px-16 w-full h-16 max-md:px-5 max-md:max-w-full">
-        <div className="flex relative z-10 flex-col items-stretch -mt-7 mb-52 w-full max-w-[1110px] max-md:mb-10 max-md:max-w-full">
+      <form className="flex overflow-hidden relative flex-col items-center px-16 w-full min-h-[40px] max-md:px-5 max-md:max-w-full">        <div className="flex relative z-10 flex-col items-stretch -mt-7 mb-52 w-full max-w-[1110px] max-md:mb-10 max-md:max-w-full">
           <div className="flex gap-5 justify-between items-stretch px-3 py-3 w-full bg-navbar2 rounded-none max-md:flex-wrap max-md:px-5 max-md:max-w-full">
             <header className="flex gap-2.5 justify-between items-stretch">
               <div className="flex flex-col shrink-0 w-6 h-6 mt-2 rounded-full" />
