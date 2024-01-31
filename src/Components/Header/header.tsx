@@ -97,8 +97,8 @@ const HeaderComponent: React.FC = () => {
         </div>
       </div>
 
-      <div className="self-center px-5 mt-16 w-full ml-40 max-w-[1110px] max-md:mt-10 max-md:max-w-full">
-        <header className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:items-stretch">
+      <div className="self-center px-5 mt-16 w-full  lg:ml-40 max-w-[1110px] max-md:mt-10 max-md:max-w-full">
+        <header className="flex gap-5 max-md:flex-col lg:ml-40  max-md:gap-0 max-md:items-stretch">
           <div className="flex flex-col items-stretch w-[33%] max-md:ml-0 max-md:w-full">
             <section className="flex grow gap-5 justify-between items-stretch px-6 py-5 w-full bg-navbar2 max-md:pr-5 max-md:mt-8">
               <div className="flex flex-col shrink-0 bg-zinc-300 h-[120px] w-[118px]">
@@ -157,11 +157,11 @@ const HeaderComponent: React.FC = () => {
         </header>
       </div>
 
-      <div className="flex flex-col items-stretch mt-4  ml-60 mb-3.5 max-w-full w-[937px]">
+      <div className="flex flex-col items-stretch mt-4   lg:ml-60 mb-3.5 max-w-full w-[937px]">
         <div className="self-center mt-6 ml-20 text-3xl font-bold text-texto uppercase max-md:max-w-full">
           Porque Elegirnos
         </div>
-        <div className="flex gap-5 justify-between items-stretch mt-24 w-full max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
+        <div className="flex gap-5 justify-between items-stretch mt-24 ml-5 w-full max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
           <div className="flex gap-5 justify-between items-stretch">
             <div className="flex flex-col shrink-0 bg-zinc-300 h-[120px] w-[118px]">
               <img
@@ -189,7 +189,7 @@ const HeaderComponent: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-5 justify-between items-stretch pr-12 mt-16 w-full max-md:flex-wrap max-md:pr-5 max-md:mt-10 max-md:max-w-full">
+        <div className="flex gap-5 justify-between items-stretch pr-12 ml-5 mt-16 w-full max-md:flex-wrap max-md:pr-5 max-md:mt-10 max-md:max-w-full">
           <div className="flex gap-5 justify-between items-stretch">
             <div className="flex flex-col shrink-0 bg-zinc-300 h-[120px] w-[118px]">
               <img
@@ -208,7 +208,7 @@ const HeaderComponent: React.FC = () => {
               <img
                 loading="lazy"
                 srcSet="https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F8514dbcd6dd74b6e908e7fb29441c806?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F8514dbcd6dd74b6e908e7fb29441c806?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F8514dbcd6dd74b6e908e7fb29441c806?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F8514dbcd6dd74b6e908e7fb29441c806?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F8514dbcd6dd74b6e908e7fb29441c806?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F8514dbcd6dd74b6e908e7fb29441c806?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F8514dbcd6dd74b6e908e7fb29441c806?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F8514dbcd6dd74b6e908e7fb29441c806"
-                className="box-border object-cover object-center ml-3 overflow-hidden shrink-0 w-full aspect-[0.93] min-h-[20px] min-w-[20px]"
+                className="box-border object-cover object-center  overflow-hidden shrink-0 w-full aspect-[0.93] min-h-[20px] min-w-[20px]"
                 alt=""
               />
             </div>
@@ -225,7 +225,7 @@ const HeaderComponent: React.FC = () => {
         Explora nuestros proyectos recientes
       </div>
 
-    <div className="self-center ml-40 mt-24 w-full max-w-[1110px] max-md:mt-10 max-md:max-w-full">
+    <div className="self-center lg:ml-40 mt-24 w-full max-w-[1110px] max-md:mt-10 max-md:max-w-full">
       <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:items-stretch">
         <div className="flex flex-col items-stretch w-[32%] max-md:ml-0 max-md:w-full">
           <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1"className="object-contain object-center grow w-full aspect-[0.75] max-md:mt-8" />
