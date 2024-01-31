@@ -100,17 +100,17 @@ const HeaderComponent: React.FC = () => {
       <div className="self-center px-5 mt-16 w-full  lg:ml-40 max-w-[1110px] max-md:mt-10 max-md:max-w-full">
         <header className="flex gap-5 max-md:flex-col lg:ml-40  max-md:gap-0 max-md:items-stretch">
           <div className="flex flex-col items-stretch w-[33%] max-md:ml-0 max-md:w-full">
-            <section className="flex grow gap-5 justify-between items-stretch px-6 py-5 w-full bg-navbar2 max-md:pr-5 max-md:mt-8">
+            <section className="flex grow gap-4 justify-between items-stretch px-6 py-5 w-full bg-navbar2 max-md:pr-5 max-md:mt-8">
               <div className="flex flex-col shrink-0 bg-zinc-300 h-[120px] w-[118px]">
                 <img
                   loading="lazy"
                   srcSet="https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F61f2e48c765c4410bef90fd7ec2d8ef3?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F61f2e48c765c4410bef90fd7ec2d8ef3?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F61f2e48c765c4410bef90fd7ec2d8ef3?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F61f2e48c765c4410bef90fd7ec2d8ef3?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F61f2e48c765c4410bef90fd7ec2d8ef3?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F61f2e48c765c4410bef90fd7ec2d8ef3?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F61f2e48c765c4410bef90fd7ec2d8ef3?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F61f2e48c765c4410bef90fd7ec2d8ef3"
-                  className="box-border object-cover object-center overflow-hidden shrink-0 mx-auto w-full aspect-[0.99] max-w-[118px] min-h-[20px] min-w-[20px]"
+                  className="box-border object-cover object-center overflow-hidden shrink-0 mx-auto w-full aspect-[1.1] max-w-[118px] min-h-[20px] min-w-[20px]"
                   alt="Construction"
                 />
               </div>
               <div className="flex flex-col flex-1 items-stretch self-start">
-                <h2 className="text-xl font-semibold text-texto uppercase">
+                <h2 className="text-1xl font-semibold text-center text-texto uppercase">
                   Construcción
                 </h2>
                 <div className="flex flex-col shrink-0 mt-2.5 bg-form  rounded-sm h-[3px]" />
@@ -129,7 +129,7 @@ const HeaderComponent: React.FC = () => {
                 />
               </div>
               <div className="flex flex-col flex-1 items-stretch self-start">
-                <h2 className="text-xl font-semibold text-texto uppercase">
+                <h2 className="text-1xl font-semibold text-center text-texto uppercase">
                   Reforma
                 </h2>
                 <div className="flex flex-col shrink-0 mt-2.5 bg-form  rounded-sm h-[3px]" />
@@ -147,7 +147,7 @@ const HeaderComponent: React.FC = () => {
                 />
               </div>
               <div className="flex flex-col flex-1 items-stretch self-start">
-                <h2 className="text-xl font-semibold text-texto uppercase">
+                <h2 className="text-1xl font-semibold text-center text-texto uppercase">
                   Demolición
                 </h2>
                 <div className="flex flex-col shrink-0 mt-2.5 bg-form rounded-sm h-[3px]" />
