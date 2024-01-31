@@ -14,6 +14,7 @@ export default {
       teal: "#26c4c5",
       fondheader: "#060e4d",
       botun: "#FFFFFF",
+      botun2: "black",
 
     },
     fontFamily: {

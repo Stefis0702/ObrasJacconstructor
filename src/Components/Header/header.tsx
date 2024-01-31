@@ -9,21 +9,21 @@ const HeaderComponent: React.FC = () => {
             <div className="flex flex-col items-stretch w-[47%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col items-stretch max-md:mt-10 max-md:max-w-full">
                 <div className="text-base font-semibold text-texto max-md:max-w-full">
-                ¿En qué podemos ayudarte?
+                  ¿En qué podemos ayudarte?
                 </div>
                 <div className="mt-5 text-3xl font-bold text-texto max-md:max-w-full">
-                <p>
-                Bienvenido a <strong>OBRAS JAC</strong>
-              </p>
-              <p>Soluciones reales.</p>
+                  <p>
+                    Bienvenido a <strong>OBRAS JAC</strong>
+                  </p>
+                  <p>Soluciones reales.</p>
                 </div>
                 <div className="mt-8 text-base text-texto max-md:max-w-full">
-                <p>
-                Somos expertos especializados en diseñar y construir espacios
-                comerciales y residenciales que sean funcionales, sustentables y
-                estéticamente agradables, pero ante todo nos enfocamos en
-                cumplir tus sueños.
-              </p>
+                  <p>
+                    Somos expertos especializados en diseñar y construir
+                    espacios comerciales y residenciales que sean funcionales,
+                    sustentables y estéticamente agradables, pero ante todo nos
+                    enfocamos en cumplir tus sueños.
+                  </p>
                 </div>
                 <div className="flex gap-2 justify-between items-stretch mt-7 max-md:flex-wrap max-md:max-w-full">
                   <img
@@ -32,7 +32,7 @@ const HeaderComponent: React.FC = () => {
                     className="object-contain object-center shrink-0 w-6 aspect-square"
                   />
                   <div className="flex-auto my-auto text-texto font-medium text-orange-500">
-                  <p>Especialistas en diseño y construcción.</p>
+                    <p>Especialistas en diseño y construcción.</p>
                   </div>
                 </div>
                 <div className="flex gap-2 justify-between items-stretch mt-2 max-md:flex-wrap max-md:max-w-full">
@@ -42,10 +42,10 @@ const HeaderComponent: React.FC = () => {
                     className="object-contain object-center shrink-0 self-start w-6 aspect-square"
                   />
                   <div className="flex-auto text-texto font-medium text-orange-500">
-                  <p>
-                  Fuerte comprensión de las necesidades y objetivos de nuestros
-                  clientes.
-                </p>
+                    <p>
+                      Fuerte comprensión de las necesidades y objetivos de
+                      nuestros clientes.
+                    </p>
                   </div>
                 </div>{" "}
                 <div className="flex gap-2 justify-between items-stretch mt-2.5 max-md:flex-wrap max-md:max-w-full">
@@ -55,7 +55,9 @@ const HeaderComponent: React.FC = () => {
                     className="object-contain object-center shrink-0 self-start w-6 aspect-square"
                   />{" "}
                   <div className="flex-auto text-texto font-medium text-orange-500">
-                  <p>Diseño arquitectónico, ingeniería y dirección de obra.</p>
+                    <p>
+                      Diseño arquitectónico, ingeniería y dirección de obra.
+                    </p>
                   </div>
                 </div>{" "}
                 <div className="flex gap-2 justify-between items-stretch mt-2.5 max-md:flex-wrap max-md:max-w-full">
@@ -65,7 +67,7 @@ const HeaderComponent: React.FC = () => {
                     className="object-contain object-center shrink-0 w-6 aspect-square"
                   />{" "}
                   <div className="flex-auto my-auto text-texto font-medium text-orange-500">
-                  <p>Impacto ambiental de nuestros proyectos</p>
+                    <p>Impacto ambiental de nuestros proyectos</p>
                   </div>
                 </div>{" "}
                 <div className="flex gap-2 justify-between items-stretch mt-2 max-md:flex-wrap max-md:max-w-full">
@@ -75,21 +77,21 @@ const HeaderComponent: React.FC = () => {
                     className="object-contain object-center shrink-0 w-6 aspect-square"
                   />{" "}
                   <div className="flex-auto my-auto text-texto font-medium text-orange-500">
-                  <p>Soluciones de ingeniería sostenibles</p>
+                    <p>Soluciones de ingeniería sostenibles</p>
                   </div>
                 </div>{" "}
                 <button className=" justify-center items-stretch self-start px-10 py-4 mt-12 text-2xl font-semibold text-texto3 whitespace-nowrap rounded-lg border-2 border-orange-500 border-solid max-md:px-5 max-md:mt-10">
-                <p>Leer más...</p>
+                  <p>Leer más...</p>
                 </button>
               </div>
             </div>{" "}
             <div className="flex flex-col items-stretch ml-5 w-[53%] max-md:ml-0 max-md:w-full">
               <div className="flex overflow-hidden relative flex-col grow justify-center items-center px-16 min-h-[560px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
-              <img
-              loading="lazy"
-              srcSet="https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F4da01d11c75445f3b286cecde84750c7?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F4da01d11c75445f3b286cecde84750c7?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F4da01d11c75445f3b286cecde84750c7?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F4da01d11c75445f3b286cecde84750c7?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F4da01d11c75445f3b286cecde84750c7?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F4da01d11c75445f3b286cecde84750c7?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F4da01d11c75445f3b286cecde84750c7?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F4da01d11c75445f3b286cecde84750c7"
-              className="object-cover object-center absolute inset-0 size-full"
-            />{" "}
+                <img
+                  loading="lazy"
+                  srcSet="https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F4da01d11c75445f3b286cecde84750c7?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F4da01d11c75445f3b286cecde84750c7?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F4da01d11c75445f3b286cecde84750c7?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F4da01d11c75445f3b286cecde84750c7?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F4da01d11c75445f3b286cecde84750c7?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F4da01d11c75445f3b286cecde84750c7?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F4da01d11c75445f3b286cecde84750c7?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F4da01d11c75445f3b286cecde84750c7"
+                  className="object-cover object-center absolute inset-0 size-full"
+                />{" "}
                 <div className="flex relative flex-col shrink-0 w-1 bg-white h-[560px]" />
               </div>
             </div>
@@ -157,7 +159,7 @@ const HeaderComponent: React.FC = () => {
         </header>
       </div>
 
-      <div className="flex flex-col items-stretch mt-4   lg:ml-60 mb-3.5 max-w-full w-[937px]">
+      <div className="flex flex-col items-stretch mt-4  lg:ml-80 mb-3.5 max-w-full w-[937px]">
         <div className="self-center mt-6 ml-20 text-3xl font-bold text-texto uppercase max-md:max-w-full">
           Porque Elegirnos
         </div>
@@ -224,38 +226,58 @@ const HeaderComponent: React.FC = () => {
       <div className="header self-center mt-6 text-3xl text-center font-bold text-texto uppercase max-md:max-w-full">
         Explora nuestros proyectos recientes
       </div>
-
-    <div className="self-center lg:ml-40 mt-24 w-full max-w-[1110px] max-md:mt-10 max-md:max-w-full">
-      <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:items-stretch">
-        <div className="flex flex-col items-stretch w-[32%] max-md:ml-0 max-md:w-full">
-          <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1"className="object-contain object-center grow w-full aspect-[0.75] max-md:mt-8" />
-        </div>
-        <div className="flex flex-col items-stretch ml-5 w-[68%] max-md:ml-0 max-md:w-full">
-          <div className="flex flex-col grow items-stretch max-md:mt-8 max-md:max-w-full">
-            <div className="max-md:max-w-full">
-              <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:items-stretch">
-                <div className="flex flex-col items-stretch w-[64%] max-md:ml-0 max-md:w-full">
-                  <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fd3db917b54794838b94c4c14341b775e?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fd3db917b54794838b94c4c14341b775e?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fd3db917b54794838b94c4c14341b775e?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fd3db917b54794838b94c4c14341b775e?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fd3db917b54794838b94c4c14341b775e?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fd3db917b54794838b94c4c14341b775e?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fd3db917b54794838b94c4c14341b775e?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fd3db917b54794838b94c4c14341b775e"className="object-contain object-center grow w-full aspect-[2.42] max-md:mt-8 max-md:max-w-full" />
-                </div>
-                <div className="flex flex-col items-stretch ml-5 w-[36%] max-md:ml-0 max-md:w-full">
-                  <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F27dc674f36c7413c895cc2e960c37084?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F27dc674f36c7413c895cc2e960c37084?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F27dc674f36c7413c895cc2e960c37084?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F27dc674f36c7413c895cc2e960c37084?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F27dc674f36c7413c895cc2e960c37084?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F27dc674f36c7413c895cc2e960c37084?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F27dc674f36c7413c895cc2e960c37084?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F27dc674f36c7413c895cc2e960c37084"className="object-contain object-center grow w-full aspect-[0.75] max-md:mt-8" />
+      <div className="self-center lg:ml-60 mt-24 w-full max-w-[1110px] max-md:mt-10 max-md:max-w-full">
+        <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:items-stretch">
+          <div className="flex flex-col items-stretch w-[32%] max-md:ml-0 max-md:w-full">
+            <img
+              loading="lazy"
+              srcSet="https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Ff0eb851644cc493dba72078eee746dd1"
+              className="object-contain object-center grow w-full aspect-[0.75] max-md:mt-8"
+            />
+          </div>
+          <div className="flex flex-col items-stretch ml-5 w-[68%] max-md:ml-0 max-md:w-full">
+            <div className="flex flex-col grow items-stretch max-md:mt-8 max-md:max-w-full">
+              <div className="max-md:max-w-full">
+                <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:items-stretch">
+                  <div className="flex flex-col items-stretch w-[64%] max-md:ml-0 max-md:w-full">
+                    <img
+                      loading="lazy"
+                      srcSet="https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fd3db917b54794838b94c4c14341b775e?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fd3db917b54794838b94c4c14341b775e?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fd3db917b54794838b94c4c14341b775e?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fd3db917b54794838b94c4c14341b775e?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fd3db917b54794838b94c4c14341b775e?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fd3db917b54794838b94c4c14341b775e?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fd3db917b54794838b94c4c14341b775e?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fd3db917b54794838b94c4c14341b775e"
+                      className="object-contain object-center grow w-full aspect-[2.42] max-md:mt-8 max-md:max-w-full"
+                    />
+                  </div>
+                  <div className="flex flex-col items-stretch ml-5 w-[36%] max-md:ml-0 max-md:w-full">
+                    <img
+                      loading="lazy"
+                      srcSet="https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F27dc674f36c7413c895cc2e960c37084?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F27dc674f36c7413c895cc2e960c37084?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F27dc674f36c7413c895cc2e960c37084?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F27dc674f36c7413c895cc2e960c37084?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F27dc674f36c7413c895cc2e960c37084?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F27dc674f36c7413c895cc2e960c37084?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F27dc674f36c7413c895cc2e960c37084?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F27dc674f36c7413c895cc2e960c37084"
+                      className="object-contain object-center grow w-full aspect-[0.75] max-md:mt-8"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="mt-6 max-md:max-w-full">
-              <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:items-stretch">
-                <div className="flex flex-col items-stretch w-[36%] max-md:ml-0 max-md:w-full">
-                  <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fe5a449c8c88a434da68b55a4cce95fd2?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fe5a449c8c88a434da68b55a4cce95fd2?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fe5a449c8c88a434da68b55a4cce95fd2?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fe5a449c8c88a434da68b55a4cce95fd2?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fe5a449c8c88a434da68b55a4cce95fd2?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fe5a449c8c88a434da68b55a4cce95fd2?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fe5a449c8c88a434da68b55a4cce95fd2?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fe5a449c8c88a434da68b55a4cce95fd2"className="object-contain object-center grow w-full aspect-[1.78] max-md:mt-8" />
-                </div>
-                <div className="flex flex-col items-stretch ml-5 w-[64%] max-md:ml-0 max-md:w-full">
-                  <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F6ac67bd9474d48d7804443ed1f5f79dc?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F6ac67bd9474d48d7804443ed1f5f79dc?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F6ac67bd9474d48d7804443ed1f5f79dc?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F6ac67bd9474d48d7804443ed1f5f79dc?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F6ac67bd9474d48d7804443ed1f5f79dc?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F6ac67bd9474d48d7804443ed1f5f79dc?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F6ac67bd9474d48d7804443ed1f5f79dc?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F6ac67bd9474d48d7804443ed1f5f79dc"className="object-contain object-center grow w-full aspect-[2.42] max-md:mt-8 max-md:max-w-full" />
+              <div className="mt-6 max-md:max-w-full">
+                <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:items-stretch">
+                  <div className="flex flex-col items-stretch w-[36%] max-md:ml-0 max-md:w-full">
+                    <img
+                      loading="lazy"
+                      srcSet="https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fe5a449c8c88a434da68b55a4cce95fd2?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fe5a449c8c88a434da68b55a4cce95fd2?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fe5a449c8c88a434da68b55a4cce95fd2?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fe5a449c8c88a434da68b55a4cce95fd2?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fe5a449c8c88a434da68b55a4cce95fd2?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fe5a449c8c88a434da68b55a4cce95fd2?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fe5a449c8c88a434da68b55a4cce95fd2?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2Fe5a449c8c88a434da68b55a4cce95fd2"
+                      className="object-contain object-center grow w-full aspect-[1.78] max-md:mt-8"
+                    />
+                  </div>
+                  <div className="flex flex-col items-stretch ml-5 w-[64%] max-md:ml-0 max-md:w-full">
+                    <img
+                      loading="lazy"
+                      srcSet="https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F6ac67bd9474d48d7804443ed1f5f79dc?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F6ac67bd9474d48d7804443ed1f5f79dc?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F6ac67bd9474d48d7804443ed1f5f79dc?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F6ac67bd9474d48d7804443ed1f5f79dc?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F6ac67bd9474d48d7804443ed1f5f79dc?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F6ac67bd9474d48d7804443ed1f5f79dc?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F6ac67bd9474d48d7804443ed1f5f79dc?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2F7add5af4d9d449a6a28e95a6f9ef46a6%2F6ac67bd9474d48d7804443ed1f5f79dc"
+                      className="object-contain object-center grow w-full aspect-[2.42] max-md:mt-8 max-md:max-w-full"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
       <form className="flex overflow-hidden relative flex-col justify-center items-center px-16 py-12 mt-16 w-full min-h-[232px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
         <img
           loading="lazy"
@@ -330,10 +352,10 @@ const HeaderComponent: React.FC = () => {
       <header className="flex flex-col justify-center items-center px-16 py-8 w-full bg-navbar2 max-md:px-5 max-md:max-w-full">
         <div className="flex gap-5 justify-between items-stretch w-full max-w-[1110px] max-md:flex-wrap max-md:max-w-full">
           <div className="flex-auto my-auto text-2xl font-bold text-texto4 uppercase max-md:max-w-full">
-          ¿Buscas un constructor para su próximo proyecto?
+            ¿Buscas un constructor para su próximo proyecto?
           </div>
           <button className="justify-center items-stretch px-10 py-4 text-2xl font-semibold text-texto3 whitespace-nowrap bg-botun rounded-lg max-md:px-5">
-          Suscríbase ahora
+            Suscríbase ahora
           </button>
         </div>
       </header>
