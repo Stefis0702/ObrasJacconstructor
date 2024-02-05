@@ -5,7 +5,7 @@ export default async function handler(req, res) {
     const { destinatario, asunto, contenido } = req.body;
 
     // Configura tu servicio de emailjs utilizando las variables de entorno
-    emailjs.init(process.env.USER_EMAILJS);
+    emailjs.init(process.env.service_1buneqc);
 
     // Configura el mensaje
     const templateParams = {
@@ -17,8 +17,8 @@ export default async function handler(req, res) {
     try {
       // Envía el correo utilizando las variables de entorno
       const response = await emailjs.send(
-        process.env.SERVICE_EMAILJS,
-        process.env.TEMPLATE_EMAILJS,
+        process.env.service_1buneqc,
+        process.env.template_9zh0a0g,
         templateParams
       );
 
