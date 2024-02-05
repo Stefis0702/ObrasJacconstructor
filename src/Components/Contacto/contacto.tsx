@@ -1,3 +1,5 @@
+import EnviarCorreoButton from "../../utils/EnviarCorreoButton";
+
 function ContactForm() {
   return (
     <div className="bg-white shadow-sm border-black border-opacity-30 lg:ml-20 ">
@@ -70,6 +72,7 @@ function ContactForm() {
               <button
                 className="btn btn-outline text-texto ml-25 font-bold  bg-navbar2 whitespace-nowrap bg-orange-400 justify-center  mt-7 px-16  rounded-md max-md:max-w-full max-md:px-5"
                 type="submit"
+                onClick={EnviarCorreoButton}
               >
                 Enviar
               </button>
