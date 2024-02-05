@@ -1,5 +1,6 @@
-import React from "react";
+
 import { useCotizacion } from "../../Context/Context";
+
 
 const FormularioCotizacion: React.FC = () => {
   const {
@@ -16,6 +17,10 @@ const FormularioCotizacion: React.FC = () => {
     termsTouched,
     setTermsTouched,
   } = useCotizacion();
+  
+
+
+
 
   const handleOptionChange = (option: string) => {
     setSelectedOption(option);
@@ -222,7 +227,12 @@ const FormularioCotizacion: React.FC = () => {
   );
 
   return (
-    <>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        // Hacer la solicitud HTTP al servidor de Firebase aquí
+      }}
+    >
       <div className="mt-8 max-w-4xl mx-auto md:mx-auto md:mr-0 text-texto text-center p-6 ">
         <div className="container mx-auto flex flex-wrap  items-start">
           <div className="w-full lg:w-1/2 px-2 mb-4 mt-4 mx-auto">
@@ -331,6 +341,7 @@ const FormularioCotizacion: React.FC = () => {
         </div>
 
         <button
+        
           type="submit"
           disabled={!isFormValid}
           className=" mt-4 bg-navbar2 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
@@ -338,7 +349,7 @@ const FormularioCotizacion: React.FC = () => {
           Enviar Cotización
         </button>
       </div>
-    </>
+    </form>
   );
 };
 

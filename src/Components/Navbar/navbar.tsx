@@ -110,10 +110,10 @@ const NavComponent: React.FC = () => {
                   <Link to={"/Signup"}>REGISTRO</Link>
                 </button>
               </div>
-              <div className="font-semibold">
-                <a href="#" className="navbar-link">
-                  CONTACTO
-                </a>
+              <div className="">
+              <button className="font-semibold">
+                  <Link to={"/Contacto"}>CONTACTO</Link>
+                </button>
               </div>
             </nav>
           </div>
@@ -127,7 +127,7 @@ const NavComponent: React.FC = () => {
             </p>
           </div>
           <button className="justify-center items-stretch self-end px-10 py-4 mt-40 text-2xl font-semibold text-texto whitespace-nowrap bg-navbar2 rounded-lg max-md:px-5 max-md:mt-10">
-            Contactanos
+           <Link to={"/contacto"}>Contactanos</Link> 
           </button>
         </div>
       </form>

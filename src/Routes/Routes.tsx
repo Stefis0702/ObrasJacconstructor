@@ -8,6 +8,7 @@ import DemolicionPage from "../pages/DemolicionPage";
 import SignUpPage from "../pages/SignUpPage";
 import ProfilePage from "../pages/ProfilePage";
 import ProtectedRoute from "../utils/ProtectedRoute";
+import ContactoPage from "../pages/ContactoPage"
 
 function RoutesCom(): JSX.Element {
   return (
@@ -28,6 +29,7 @@ function RoutesCom(): JSX.Element {
             </ProtectedRoute>
           }
         />
+        <Route path="/Contacto" element={<ContactoPage />} />
       </Routes>
     </Router>
   );

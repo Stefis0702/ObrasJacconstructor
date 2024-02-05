@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HeaderComponent: React.FC = () => {
   return (
@@ -355,7 +356,7 @@ const HeaderComponent: React.FC = () => {
             ¿Buscas un constructor para su próximo proyecto?
           </div>
           <button className="justify-center items-stretch px-10 py-4 text-2xl font-semibold text-texto3 whitespace-nowrap bg-botun rounded-lg max-md:px-5">
-            Suscríbase ahora
+           <Link to={"/signUp"}>Suscríbase ahora</Link> 
           </button>
         </div>
       </header>

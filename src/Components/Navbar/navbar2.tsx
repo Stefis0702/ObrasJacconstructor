@@ -36,8 +36,9 @@ const NavComponent2: React.FC = () => {
         </div>
       </div>
 
-      <form className="flex overflow-hidden relative flex-col items-center px-16 w-full min-h-[40px] max-md:px-5 max-md:max-w-full">        <div className="flex relative z-10 flex-col items-stretch -mt-7 mb-52 w-full max-w-[1110px] max-md:mb-10 max-md:max-w-full">
-          <div className="flex gap-5 justify-between items-stretch px-3 py-3 w-full bg-navbar2 rounded-none max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+      <form className="flex overflow-hidden relative flex-col items-center px-16 w-full  max-md:px-5 max-md:max-w-full">    
+          <div className="flex relative z-10 flex-col items-stretch -mt-7 mb-20 w-full max-w-[1110px] max-md:mb-10 max-md:max-w-full">
+          <div className="flex  justify-between items-stretch px-3 py-3 w-full bg-navbar2 rounded-none max-md:flex-wrap max-md:px-5 max-md:max-w-full">
             <header className="flex gap-2.5 justify-between items-stretch">
               <div className="flex flex-col shrink-0 w-6 h-6 mt-2 rounded-full" />
               <img
@@ -46,7 +47,7 @@ const NavComponent2: React.FC = () => {
                 className="box-border object-cover object-center overflow-hidden shrink-0 mt-6 mb-auto w-20 aspect-[1.12] min-h-[20px] min-w-[20px]"
               />
             </header>
-            <nav className="flex gap-5 justify-between items-stretch my-auto text-base text-texto uppercase max-md:flex-wrap max-md:max-w-full">
+            <nav className="flex gap-5 justify-between items-stretch my-auto totext-base text-texto uppercase max-md:flex-wrap max-md:max-w-full">
               <div className="grow font-semibold">
                 <button className="">
                   <Link to={"/"} className=" ">
@@ -61,7 +62,7 @@ const NavComponent2: React.FC = () => {
                   </div>
                   <ul
                     tabIndex={0}
-                    className="dropdown-content z-[1] menu p-2 shadow bg-navbar2 border border-base-300 rounded-box w-52"
+                    className="dropdown-content z-[1] menu p-2 shadow bg-navbar2 border border-base-300 rounded-box w-25"
                   >
                     <li>
                       <button className="font-semibold">
@@ -96,10 +97,10 @@ const NavComponent2: React.FC = () => {
                   <Link to={"/Signup"}>REGISTRO</Link>
                 </button>
               </div>
-              <div className="font-semibold">
-                <a href="#" className="navbar-link">
-                  CONTACTO
-                </a>
+              <div className="">
+              <button className="font-semibold">
+                  <Link to={"/Contacto"}>CONTACTO</Link>
+                </button>
               </div>
             </nav>
           </div>
