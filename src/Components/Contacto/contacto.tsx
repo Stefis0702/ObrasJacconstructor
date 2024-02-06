@@ -1,6 +1,36 @@
-import EnviarCorreoButton from "../../utils/EnviarCorreoButton";
+
 
 function ContactForm() {
+
+  const handleSubmit = async(event: { preventDefault?: any; target?: any; }) => {
+    event.preventDefault();
+    const {target}=event;
+    console.log(event)
+
+    const form = {
+      name: target.name.value,
+      email: target.email.value,
+      message: target.comentario.value
+    };
+    console.log(event)
+    await fetch(
+      '/Proyecto-Final-It', 
+      {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({...form,secret:"secret"}),
+      
+    }
+    );
+    alert("Enviado")
+   
+  }
+  
+
+
+
   return (
     <div className="bg-white shadow-sm border-black border-opacity-30 lg:ml-20 ">
       <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
@@ -72,7 +102,7 @@ function ContactForm() {
               <button
                 className="btn btn-outline text-texto ml-25 font-bold  bg-navbar2 whitespace-nowrap bg-orange-400 justify-center  mt-7 px-16  rounded-md max-md:max-w-full max-md:px-5"
                 type="submit"
-                onClick={EnviarCorreoButton}
+                onSubmit={handleSubmit}
               >
                 Enviar
               </button>
