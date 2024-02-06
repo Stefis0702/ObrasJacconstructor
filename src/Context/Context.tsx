@@ -43,6 +43,7 @@ interface CotizacionContextProps {
   termsTouched: boolean;
   setTermsTouched: Dispatch<SetStateAction<boolean>>;
   
+  
 }
 
 const CotizacionContext = createContext<CotizacionContextProps | undefined>(undefined);
@@ -84,6 +85,7 @@ export const CotizacionProvider: React.FC<CotizacionProviderProps> = ({ children
   const [termsAgreed, setTermsAgreed] = useState(false);
   const [termsTouched, setTermsTouched] = useState(false);
   
+  
 
   const contextValue: CotizacionContextProps = {
     selectedOption,
@@ -98,6 +100,7 @@ export const CotizacionProvider: React.FC<CotizacionProviderProps> = ({ children
     setTermsAgreed,
     termsTouched,
     setTermsTouched,
+   
     
   };
 

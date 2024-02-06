@@ -1,6 +1,9 @@
+import { useState } from "react";
 import sendCustomEmail from "../../Mails/sendEmail";
 
 function ContactForm() {
+  const [formSent, setFormSent] = useState(false);
+  const [receiveOffers, setReceiveOffers] = useState(false);
   const handleSubmit = (event: { preventDefault?: any; target?: any }) => {
     event.preventDefault();
     const nameInput = document.getElementById("name") as HTMLInputElement;
@@ -12,8 +15,12 @@ function ContactForm() {
     const email = emailInput.value;
     const comentario = comentarioInput.value;
     sendCustomEmail(email, name, comentario);
-    
-    }
+    setFormSent(true);
+    nameInput.value = "";
+    emailInput.value = "";
+    comentarioInput.value = "";
+    setReceiveOffers(false);
+  };
   return (
     <form onSubmit={handleSubmit}>
       <div className="bg-white shadow-sm border-black border-opacity-30 lg:ml-20 ">
@@ -77,7 +84,12 @@ function ContactForm() {
               <div className="flex gap-2 justify-between py-1.5 mt-4 text-xs max-md:flex-wrap max-md:max-w-full">
                 <div className="flex-auto">
                   <label className="flex items-center mb-2 text-xl font-bold">
-                    <input type="checkbox" className="mr-2 bg-navbar2" />
+                    <input
+                      type="checkbox"
+                      checked={receiveOffers}
+                      onChange={() => setReceiveOffers(!receiveOffers)}
+                      className="mr-2 bg-navbar2"
+                    />
                     Me gustaría recibir ofertas.
                   </label>
                 </div>
@@ -89,6 +101,9 @@ function ContactForm() {
                 >
                   Enviar
                 </button>
+                {formSent && (
+                  <p className="text-texto mt-3">Formulario enviado</p>
+                )}
               </div>
             </div>
           </div>
