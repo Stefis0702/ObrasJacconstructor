@@ -1,5 +1,6 @@
 
 import { useCotizacion } from "../../Context/Context";
+import { sendCustomEmail } from "../../Mails/sendEmail";
 
 
 const FormularioCotizacion: React.FC = () => {
@@ -45,7 +46,9 @@ const FormularioCotizacion: React.FC = () => {
       anchoPared2: 0,
       alturaPared2: 0,
     });
+    
   };
+  
 
   const handleInputChange = (
     e: React.ChangeEvent<
@@ -78,7 +81,7 @@ const FormularioCotizacion: React.FC = () => {
 
   const isNameValid = customerInfo.name.trim() !== "";
   const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(customerInfo.email);
-  const isPhoneValid = /^\d{10}$/.test(customerInfo.phone);
+  const isPhoneValid = /^\d{9}$/.test(customerInfo.phone);
   const isTermsValid = termsAgreed && termsTouched;
   const isFormValid =
     isNameValid && isEmailValid && isPhoneValid && isTermsValid;
@@ -224,14 +227,38 @@ const FormularioCotizacion: React.FC = () => {
         </div>
       )}
     </div>
+    
   );
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  
+    // Validar que todos los términos estén aceptados
+    if (!termsAgreed || !termsTouched) {
+      alert('Debes aceptar los términos y condiciones para enviar la cotización.');
+      return;
+    }
+    
+    // Enviar el correo electrónico con el PDF adjunto
+    try {
+      await sendCustomEmail(
+        customerInfo.email,
+        'Cotización de reforma',
+        'Gracias por tu interés en nuestros servicios. Adjuntamos la cotización solicitada.',
+        true, // Adjuntar PDF
+        projectDetails
+      );
+  
+      // Aquí podrías añadir lógica adicional después de enviar el correo
+      alert('La cotización se ha enviado correctamente.');
+    } catch (error) {
+      console.error('Error al enviar el correo electrónico:', error);
+      alert('Se produjo un error al enviar la cotización. Por favor, inténtalo de nuevo más tarde.');
+    }
+  };
 
   return (
     <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        // Hacer la solicitud HTTP al servidor de Firebase aquí
-      }}
+      onSubmit={handleSubmit}
     >
       <div className="mt-8 max-w-4xl mx-auto md:mx-auto md:mr-0 text-texto text-center p-6 ">
         <div className="container mx-auto flex flex-wrap  items-start">

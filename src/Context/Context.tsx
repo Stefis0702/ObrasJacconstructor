@@ -7,7 +7,7 @@ interface CustomerInfo {
   address: string;
 }
 
-interface ProjectDetails {
+export interface ProjectDetails {
   location: string;
   dimensions: string;
   budget: string;
@@ -42,7 +42,7 @@ interface CotizacionContextProps {
   setTermsAgreed: Dispatch<SetStateAction<boolean>>;
   termsTouched: boolean;
   setTermsTouched: Dispatch<SetStateAction<boolean>>;
-  
+  formularioId: string;
   
 }
 
@@ -100,7 +100,7 @@ export const CotizacionProvider: React.FC<CotizacionProviderProps> = ({ children
     setTermsAgreed,
     termsTouched,
     setTermsTouched,
-   
+    formularioId: 'form-cotizacion',
     
   };
 

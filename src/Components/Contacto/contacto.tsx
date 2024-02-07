@@ -1,5 +1,5 @@
 import { useState } from "react";
-import sendCustomEmail from "../../Mails/sendEmail";
+import {sendCustomEmail} from "../../Mails/sendEmail";
 
 function ContactForm() {
   const [formSent, setFormSent] = useState(false);
