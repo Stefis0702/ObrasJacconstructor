@@ -32,7 +32,7 @@ function LoginComponent() {
             console.log(user);
             navigate('/profile');
           } else {
-            // Si el correo electrónico no está verificado, puedes mostrar un mensaje o realizar alguna acción específica
+           
             setError("Email not verified. Please verify your email.");
           }
           

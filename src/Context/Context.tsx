@@ -37,6 +37,7 @@ export interface ProjectDetails {
 }
 
 interface CotizacionContextProps {
+  
   selectedOption: string;
   setSelectedOption: Dispatch<SetStateAction<string>>;
   customerInfo: CustomerInfo;

@@ -233,24 +233,22 @@ const FormularioCotizacion: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   
-    // Validar que todos los términos estén aceptados
+    
     if (!termsAgreed || !termsTouched) {
       alert('Debes aceptar los términos y condiciones para enviar la cotización.');
       return;
     }
     
-    // Enviar el correo electrónico con el PDF adjunto
+  
     try {
       await sendCustomEmail(
         customerInfo.email,
         'Cotización de reforma',
         'Gracias por tu interés en nuestros servicios. Adjuntamos la cotización solicitada.',
-        true, // Adjuntar PDF
+        true, 
         projectDetails
       );
       
-  
-      // Aquí podrías añadir lógica adicional después de enviar el correo
       alert('La cotización se ha enviado correctamente.');
     } catch (error) {
       console.error('Error al enviar el correo electrónico:', error);

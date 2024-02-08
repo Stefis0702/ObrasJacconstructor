@@ -17,27 +17,27 @@ async function sendCustomEmail(email: string, subject: string, body: string, att
     message: {
       subject: subject,
       html: `<p>${body}</p>`,
-      attachments: [] as Attachment[], // Definir el tipo explícitamente como Attachment[]
+      attachments: [] as Attachment[], 
     },
   };
 
   if (attachPDF && projectDetails) {
-    // Generar el PDF con los datos del formulario
+    
     const pdfBytes = await generateQuoteFormPDF(projectDetails);
 
-    // Convertir el ArrayBuffer a una cadena Base64 usando btoa()
+    
     const pdfBase64 = btoa(String.fromCharCode(...new Uint8Array(pdfBytes)));
 
-    // Adjuntar el PDF al correo electrónico
+   
     emailContent.message.attachments.push({
       filename: 'cotizacion.pdf',
       content: pdfBase64,
-      encoding: 'base64', // Indica que el contenido es en Base64
+      encoding: 'base64', 
       contentType: 'application/pdf',
     });
   }
 
-  // Enviar el correo electrónico
+ 
   try {
     await addDoc(collectionRef, emailContent);
     console.log('Correo electrónico enviado correctamente.');
