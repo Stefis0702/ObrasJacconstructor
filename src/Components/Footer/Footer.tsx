@@ -158,7 +158,7 @@ function FooterComponent() {
           alt="Logo"
         />
         <div className="flex-auto text-xs text-texto">
-          Design with love 2024. All right reserved Stephanie
+          Design with love 2024. All right reserved Stephanie   Terminos y Condiciones Politica de Privacidad Politica de cookies
         </div>
       </footer>
 

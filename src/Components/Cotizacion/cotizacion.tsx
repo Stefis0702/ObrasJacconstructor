@@ -17,6 +17,7 @@ const FormularioCotizacion: React.FC = () => {
     setTermsAgreed,
     termsTouched,
     setTermsTouched,
+    
   } = useCotizacion();
   
 
@@ -247,6 +248,7 @@ const FormularioCotizacion: React.FC = () => {
         true, // Adjuntar PDF
         projectDetails
       );
+      
   
       // Aquí podrías añadir lógica adicional después de enviar el correo
       alert('La cotización se ha enviado correctamente.');

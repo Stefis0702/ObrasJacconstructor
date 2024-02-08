@@ -1,4 +1,11 @@
-import React, { createContext, useContext, useState, ReactNode, Dispatch, SetStateAction } from 'react';
+import React, {
+  createContext,
+  useContext,
+  useState,
+  ReactNode,
+  Dispatch,
+  SetStateAction,
+} from "react";
 
 interface CustomerInfo {
   name: string;
@@ -21,11 +28,11 @@ export interface ProjectDetails {
   constructionType?: string;
   demolitionType?: string;
   cambioArmariosDetails?: string;
-  cantidadParedes: '1',
-  anchoPared1: number,
-  alturaPared1: number,
-  anchoPared2: number,
-  alturaPared2: number,
+  cantidadParedes: "1";
+  anchoPared1: number;
+  alturaPared1: number;
+  anchoPared2: number;
+  alturaPared2: number;
   [key: string]: any;
 }
 
@@ -42,50 +49,49 @@ interface CotizacionContextProps {
   setTermsAgreed: Dispatch<SetStateAction<boolean>>;
   termsTouched: boolean;
   setTermsTouched: Dispatch<SetStateAction<boolean>>;
-  formularioId: string;
-  
-}
+  }
 
-const CotizacionContext = createContext<CotizacionContextProps | undefined>(undefined);
+const CotizacionContext = createContext<CotizacionContextProps | undefined>(
+  undefined
+);
 
 interface CotizacionProviderProps {
   children: ReactNode;
 }
 
-export const CotizacionProvider: React.FC<CotizacionProviderProps> = ({ children }) => {
-  const [selectedOption, setSelectedOption] = useState('');
+export const CotizacionProvider: React.FC<CotizacionProviderProps> = ({
+  children,
+}) => {
+  const [selectedOption, setSelectedOption] = useState("");
   const [customerInfo, setCustomerInfo] = useState<CustomerInfo>({
-    name: '',
-    email: '',
-    phone: '',
-    address: '',
+    name: "",
+    email: "",
+    phone: "",
+    address: "",
   });
   const [projectDetails, setProjectDetails] = useState<ProjectDetails>({
-    location: '',
-    dimensions: '',
-    budget: '',
-    timeline: '',
-    reformType: '',
+    location: "",
+    dimensions: "",
+    budget: "",
+    timeline: "",
+    reformType: "",
     ancho: 0,
     altura: 0,
     numCapas: 0,
-    otherDetails: '',
-    paintingOptions: '',
-    constructionType: '',
-    demolitionType: '',
-    cambioArmariosDetails: '',
-    cantidadParedes: '1',
+    otherDetails: "",
+    paintingOptions: "",
+    constructionType: "",
+    demolitionType: "",
+    cambioArmariosDetails: "",
+    cantidadParedes: "1",
     anchoPared1: 0,
     alturaPared1: 0,
     anchoPared2: 0,
     alturaPared2: 0,
-    
   });
-  const [additionalServices, setAdditionalServices] = useState('');
+  const [additionalServices, setAdditionalServices] = useState("");
   const [termsAgreed, setTermsAgreed] = useState(false);
   const [termsTouched, setTermsTouched] = useState(false);
-  
-  
 
   const contextValue: CotizacionContextProps = {
     selectedOption,
@@ -100,7 +106,6 @@ export const CotizacionProvider: React.FC<CotizacionProviderProps> = ({ children
     setTermsAgreed,
     termsTouched,
     setTermsTouched,
-    formularioId: 'form-cotizacion',
     
   };
 
@@ -114,7 +119,9 @@ export const CotizacionProvider: React.FC<CotizacionProviderProps> = ({ children
 export const useCotizacion = (): CotizacionContextProps => {
   const context = useContext(CotizacionContext);
   if (!context) {
-    throw new Error('useCotizacion debe ser utilizado dentro de un CotizacionProvider');
+    throw new Error(
+      "useCotizacion debe ser utilizado dentro de un CotizacionProvider"
+    );
   }
   return context;
 };

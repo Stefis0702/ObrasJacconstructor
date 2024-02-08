@@ -1,16 +1,12 @@
 {
   "hosting": {
-    "public": "build",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
     "rewrites": [
-      {
-        "source": "/Proyecto-Final-It/**",
-        "function": "contactFunction"
-      },
       {
         "source": "**",
         "destination": "/index.html"
