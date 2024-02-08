@@ -1,11 +1,11 @@
 import { PDFDocument, rgb, StandardFonts } from 'pdf-lib';
-import { ProjectDetails } from '../Context/Context';
+import { ProjectDetails,useCotizacion } from '../Context/Context';
 
 
 async function generateQuoteFormPDF(projectDetails: ProjectDetails): Promise<Uint8Array> {
   const selectedOption = projectDetails.constructionType;
   const additionalServices = projectDetails.paintingOptions;
-  const customerInfo = projectDetails;
+  const customerInfo = useCotizacion().customerInfo;
   const termsAgreed = true;
   
 

@@ -375,7 +375,7 @@ const FormularioCotizacion: React.FC = () => {
           disabled={!isFormValid}
           className=" mt-4 bg-navbar2 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         >
-          Enviar Cotización
+          Enviar Presupuesto
         </button>
       </div>
     </form>
